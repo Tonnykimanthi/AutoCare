@@ -1,7 +1,11 @@
+import Header from "./components/layout/Header";
+import HeroSection from "./components/layout/HeroSection";
+
 function App() {
   return (
     <>
-      <h1 className="text-4xl font-bold text-white">AutoCare</h1>
+      <Header />
+      <HeroSection />
     </>
   );
 }
