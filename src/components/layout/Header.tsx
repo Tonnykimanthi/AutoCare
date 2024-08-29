@@ -1,29 +1,29 @@
+import { useState } from "react";
 import Button from "../ui/Button";
+import Navbar from "../ui/Navbar";
+// Icons
+import { RiMenu3Fill } from "react-icons/ri";
 
 const Header = () => {
+  const [navIsOpen, setNavIsOpen] = useState(false);
   return (
-    <header className="text-lightGray absolute top-0 flex w-full items-center justify-between bg-black bg-opacity-20 px-5 py-2">
+    <header className="text-lightGray absolute top-0 flex w-full items-center justify-between bg-black bg-opacity-20 px-4 py-2">
       <div className="text-primary flex items-center gap-x-1">
-        <img src="/public/car.svg" alt="" className="" />
-        <span className="text-xl font-bold italic">AUTOCARE</span>
+        <img src="/public/car.svg" alt="Car" />
+        <span className="text-xl font-bold italic max-sm:text-lg">
+          AUTOCARE
+        </span>
       </div>
-      <nav>
-        <ul className="flex gap-x-5 font-medium">
-          <li className="after:bg-primary relative cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:transition-all hover:after:w-full">
-            HOME
-          </li>
-          <li className="after:bg-primary relative cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:transition-all hover:after:w-full">
-            ABOUT
-          </li>
-          <li className="after:bg-primary relative cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:transition-all hover:after:w-full">
-            SERVICES
-          </li>
-          <li className="after:bg-primary relative cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:transition-all hover:after:w-full">
-            CONTACT
-          </li>
-        </ul>
-      </nav>
-      <Button text="GET IN TOUCH" styles="rounded" />
+      <Navbar navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen} />
+      <div className="flex items-center gap-x-2">
+        <Button text="GET IN TOUCH" styles="rounded" />
+        <button
+          onClick={() => setNavIsOpen(true)}
+          className="hidden max-sm:block"
+        >
+          <RiMenu3Fill className="text-lightGray size-7" />
+        </button>
+      </div>
     </header>
   );
 };
