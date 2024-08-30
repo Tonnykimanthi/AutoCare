@@ -1,9 +1,14 @@
 import Car from "../../assets/car.png";
+import Hero from "../../assets/hero.avif";
+
 import Button from "../ui/Button";
 
 const HeroSection = () => {
   return (
-    <section className="flex h-screen items-center justify-around bg-dark bg-[url('https://images.unsplash.com/photo-1676288176672-0ed5d526a6c7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGF1dG9tb3RpdmV8ZW58MHx8MHx8fDA%3D')] bg-cover bg-no-repeat p-5 text-lightGray max-md:flex-col max-md:justify-center">
+    <section
+      className={`bg-dark text-light flex h-screen items-center justify-around bg-cover bg-no-repeat p-5 max-md:flex-col max-md:justify-center`}
+      style={{ backgroundImage: `url(${Hero})` }}
+    >
       <div className="max-md:mt-20 max-md:text-center">
         <h1 className="text-5xl font-bold max-md:text-3xl">
           Drive with Confidence,
