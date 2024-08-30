@@ -1,3 +1,4 @@
+// Icons
 import { FaOilCan } from "react-icons/fa";
 import { PiEngineFill } from "react-icons/pi";
 import { GiAutoRepair } from "react-icons/gi";
@@ -5,7 +6,7 @@ import { GiFlatTire } from "react-icons/gi";
 import { FaCarBattery } from "react-icons/fa";
 
 type Service = {
-  Icon: React.ComponentType<{className: string}>;
+  Icon: React.ComponentType<{ className: string }>;
   title: string;
 };
 

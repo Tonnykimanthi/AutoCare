@@ -18,7 +18,7 @@ const Header = () => {
       <div className="flex items-center gap-x-2">
         <Button
           text="GET IN TOUCH"
-          styles="rounded px-5 hidden max-sm:px-3 sm:inline-block"
+          styles="rounded px-3 hidden max-sm:px-3 sm:inline-block"
         />
         <button
           onClick={() => setNavIsOpen(true)}

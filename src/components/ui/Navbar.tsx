@@ -1,4 +1,6 @@
 import React from "react";
+// Constants
+import navbarList from "../../constants/NavbarList";
 // Icons
 import { MdOutlineClose } from "react-icons/md";
 
@@ -18,19 +20,15 @@ const Navbar = ({ navIsOpen, setNavIsOpen }: NavbarProps) => {
       >
         <MdOutlineClose className="size-7" />
       </button>
-      <ul className="p flex gap-x-5 gap-y-10 font-medium max-sm:flex-col">
-        <li className="relative w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full">
-          HOME
-        </li>
-        <li className="relative w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full">
-          SERVICES
-        </li>
-        <li className="relative w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full">
-          ABOUT
-        </li>
-        <li className="relative w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full">
-          CONTACT
-        </li>
+      <ul className="flex gap-x-5 gap-y-10 font-medium max-sm:flex-col">
+        {navbarList.map((item, index) => (
+          <li
+            key={index}
+            className="relative w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full max-md:text-sm"
+          >
+            {item}
+          </li>
+        ))}
       </ul>
     </nav>
   );
