@@ -7,21 +7,21 @@ import { RiMenu3Fill } from "react-icons/ri";
 const Header = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);
   return (
-    <header className="text-lightGray absolute top-0 flex w-full items-center justify-between bg-black bg-opacity-20 px-4 py-2">
-      <div className="text-primary flex items-center gap-x-1">
+    <header className="absolute top-0 flex w-full items-center justify-between bg-black bg-opacity-20 px-4 py-2 text-lightGray max-sm:px-2">
+      <div className="flex items-center gap-x-1 text-primary">
         <img src="/public/car.svg" alt="Car" />
-        <span className="text-xl font-bold italic max-sm:text-lg">
+        <span className="text-xl font-bold italic max-sm:text-base">
           AUTOCARE
         </span>
       </div>
       <Navbar navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen} />
       <div className="flex items-center gap-x-2">
-        <Button text="GET IN TOUCH" styles="rounded" />
+        <Button text="GET IN TOUCH" styles="rounded px-5 max-sm:px-3" />
         <button
           onClick={() => setNavIsOpen(true)}
           className="hidden max-sm:block"
         >
-          <RiMenu3Fill className="text-lightGray size-7" />
+          <RiMenu3Fill className="size-7 text-lightGray" />
         </button>
       </div>
     </header>
