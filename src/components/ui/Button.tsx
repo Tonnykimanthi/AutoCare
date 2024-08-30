@@ -6,7 +6,7 @@ type ButtonProps = {
 const Button = ({ text, styles }: ButtonProps) => {
   return (
     <button
-      className={`bg-primary hover:bg-secondary px-5 py-2 active:scale-95 max-sm:text-sm ${styles}`}
+      className={`bg-primary px-5 py-2 font-medium transition hover:bg-secondary active:scale-95 max-sm:text-sm ${styles}`}
     >
       {text}
     </button>
