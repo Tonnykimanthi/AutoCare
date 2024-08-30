@@ -1,7 +1,6 @@
 // Components
 import ServicesSlider from "../ui/ServicesSlider";
 import SectionTitle from "../ui/SectionTitle";
-import Button from "../ui/Button";
 // Images
 import Service1 from "..//../assets/service1.avif";
 // Icons
