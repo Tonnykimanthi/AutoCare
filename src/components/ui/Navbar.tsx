@@ -1,6 +1,6 @@
 import React from "react";
 // Constants
-import navbarList from "../../constants/NavbarList";
+import navbarList from "../../constants/navbarList";
 // Icons
 import { MdOutlineClose } from "react-icons/md";
 
@@ -12,11 +12,11 @@ type NavbarProps = {
 const Navbar = ({ navIsOpen, setNavIsOpen }: NavbarProps) => {
   return (
     <nav
-      className={`max-sm:bg-dark bottom-0 left-0 right-0 top-0 origin-top-right items-center justify-center transition max-sm:fixed max-sm:flex ${navIsOpen ? "max-sm:scale-100 max-sm:opacity-100" : "max-sm:scale-0 max-sm:opacity-0"}`}
+      className={`bottom-0 left-0 right-0 top-0 origin-top-right items-center justify-center transition max-sm:fixed max-sm:flex max-sm:bg-dark ${navIsOpen ? "max-sm:scale-100 max-sm:opacity-100" : "max-sm:scale-0 max-sm:opacity-0"}`}
     >
       <button
         onClick={() => setNavIsOpen(false)}
-        className="hover:text-dark border-light absolute right-4 top-4 hidden rounded-full border p-1 transition hover:bg-white max-sm:block"
+        className="absolute right-4 top-4 hidden rounded-full border border-light p-1 transition hover:bg-white hover:text-dark max-sm:block"
       >
         <MdOutlineClose className="size-7" />
       </button>

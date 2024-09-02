@@ -8,7 +8,7 @@ import { FaCarRear } from "react-icons/fa6";
 const FiguresInfo = () => {
   return (
     <section
-      className="text-light bg-cover bg-no-repeat"
+      className="text-light bg-cover bg-no-repeat mt-5"
       style={{ backgroundImage: `url(${BgImage})` }}
     >
       <div className="bg-dark grid h-full w-full grid-cols-3 gap-5 bg-opacity-80 p-10 max-sm:grid-cols-1">

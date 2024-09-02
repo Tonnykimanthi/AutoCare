@@ -9,7 +9,7 @@ import ReadMoreBtn from "../ui/ReadMoreBtn";
 
 const Services = () => {
   return (
-    <section className="flex flex-col items-center p-5 max-sm:px-2">
+    <section className="mt-5 flex flex-col items-center p-5 max-sm:px-2">
       <SectionTitle text="Our Services" />
       <ServicesSlider />
       <div className="mt-5 grid grid-cols-2 gap-5 max-md:grid-cols-1">

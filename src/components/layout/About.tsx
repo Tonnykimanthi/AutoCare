@@ -6,7 +6,7 @@ import AboutImage from "../../assets/about.avif";
 
 const About = () => {
   return (
-    <section className="p-5">
+    <section className="p-5 mt-5 max-sm:px-2">
       <SectionTitle text="About Us" />
       <div className="mt-5 grid grid-cols-2 gap-5 max-md:grid-cols-1">
         <img
