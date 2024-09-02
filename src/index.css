@@ -7,12 +7,17 @@
 body {
   font-family: "Poppins", sans-serif;
 }
- /* Hide scrollbar for Chrome, Safari and Opera */
- .no-scrollbar::-webkit-scrollbar {
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@layer utilities {
+  .clip-inset {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
 }

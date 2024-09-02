@@ -2,19 +2,19 @@
 import ServicesSlider from "../ui/ServicesSlider";
 import SectionTitle from "../ui/SectionTitle";
 // Images
-import Service1 from "..//../assets/service1.avif";
+import Service from "..//../assets/service.avif";
 // Icons
 import { FaRegCheckCircle } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa6";
+import ReadMoreBtn from "../ui/ReadMoreBtn";
 
 const Services = () => {
   return (
-    <section className="flex flex-col items-center bg-white px-4 py-5 max-sm:px-2">
+    <section className="flex flex-col items-center p-5 max-sm:px-2">
       <SectionTitle text="Our Services" />
       <ServicesSlider />
-      <div className="mt-5 grid grid-cols-2 gap-5 max-sm:grid-cols-1">
-        <img src={Service1} alt="Servicing" className="h-full object-cover" />
-        <div className="max-sm:text-center">
+      <div className="mt-5 grid grid-cols-2 gap-5 max-md:grid-cols-1">
+        <img src={Service} alt="Servicing" className="h-full object-cover" />
+        <div className="max-md:text-center">
           <h3 className="text-3xl font-bold">
             10 Years Of Experience In Auto Servicing
           </h3>
@@ -42,10 +42,7 @@ const Services = () => {
               Suspension & Steering Repair
             </span>
           </div>
-          <button className="text-light mt-3 flex w-fit items-center gap-x-2 rounded-sm border border-primary bg-primary px-5 py-2 font-medium transition hover:bg-transparent hover:text-primary">
-            READ MORE
-            <FaArrowRight />
-          </button>
+          <ReadMoreBtn styles="mt-4" />
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+import About from "./components/layout/About";
 import Header from "./components/layout/Header";
 import HeroSection from "./components/layout/HeroSection";
 import Services from "./components/layout/Services";
@@ -8,8 +9,9 @@ function App() {
     <>
       <Header />
       <HeroSection />
-      <Services />
+      <About />
       <FiguresInfo />
+      <Services />
     </>
   );
 }
