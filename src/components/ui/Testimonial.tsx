@@ -19,7 +19,7 @@ const Testimonial = ({ testimonial }: TestimonialProps) => {
       </div>
       <p className="mt-3 text-lg font-bold">{testimonial.name}</p>
       <p>{testimonial.profession}</p>
-      <p className="mt-3 rounded bg-gray-200 p-5 text-center">
+      <p className="mt-3 rounded bg-dark/10 p-5 text-center dark:bg-gray-700">
         {testimonial.testimonial}
       </p>
     </div>

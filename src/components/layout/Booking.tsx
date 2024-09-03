@@ -11,7 +11,7 @@ const Booking = () => {
         backgroundImage: `url(${bookingImage})`,
       }}
     >
-      <div className="grid place-items-center gap-5 bg-dark bg-opacity-90 p-5 max-sm:px-2">
+      <div className="grid place-items-center gap-5 bg-dark bg-opacity-0 p-5 max-sm:px-2 dark:bg-opacity-90">
         <BookingForm />
       </div>
     </section>

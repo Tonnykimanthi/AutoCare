@@ -13,7 +13,7 @@ type TechnicianProps = {
 
 const Technician = ({ technician }: TechnicianProps) => {
   return (
-    <div className="group grid w-full max-w-md place-items-center overflow-hidden rounded bg-gray-200 pb-3">
+    <div className="group grid w-full max-w-md place-items-center overflow-hidden rounded bg-gray-200 dark:bg-gray-700 dark:text-light pb-3">
       <div className="relative h-64 w-full overflow-hidden">
         <img
           className="h-full w-full object-cover"

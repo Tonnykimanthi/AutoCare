@@ -4,7 +4,7 @@ const BookingForm = () => {
       onSubmit={(e) => {
         e.preventDefault();
       }}
-      className="w-full max-w-xl rounded-lg bg-primary bg-opacity-90 p-5"
+      className="w-full max-w-xl rounded-lg border-2 border-primary/30 bg-dark bg-opacity-50 p-5 backdrop-blur-lg"
     >
       <h4 className="text-center text-2xl font-bold uppercase">
         Book Your Service Appointment
@@ -14,7 +14,7 @@ const BookingForm = () => {
         <input
           type="text"
           placeholder="Your name"
-          className="w-full rounded p-3 text-black outline-none"
+          className="w-full rounded border border-light/40 bg-light/10 p-3 outline-none transition focus:border-primary"
         />
       </div>
       <div className="mt-4">
@@ -22,18 +22,18 @@ const BookingForm = () => {
         <input
           type="text"
           placeholder="Your email"
-          className="w-full rounded p-3 text-black outline-none"
+          className="w-full rounded border border-light/40 bg-light/10 p-3 outline-none transition focus:border-primary"
         />
       </div>
       <div className="mt-4">
         <label className="text-lg font-medium uppercase">Email</label> <br />
         <textarea
-          className="w-full rounded p-3 text-black outline-none"
+          className="w-full rounded border border-light/40 bg-light/10 p-3 outline-none transition focus:border-primary"
           placeholder="Type your message here"
           rows={5}
         ></textarea>
       </div>
-      <button className="mx-auto mt-2 block w-1/2 rounded bg-dark py-3 transition hover:shadow-lg hover:shadow-dark/20">
+      <button className="mx-auto mt-2 block w-1/2 rounded bg-primary py-3 transition hover:bg-primary/80 hover:shadow-lg active:scale-95">
         SUBMIT
       </button>
     </form>

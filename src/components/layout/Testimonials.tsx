@@ -51,27 +51,27 @@ const Testimonials = () => {
       <div className="mt-2 flex items-center justify-center gap-x-5">
         <button
           onClick={handleFirstSlide}
-          className={`size-4 ${current === 0 ? "bg-primary" : "bg-dark/20"}`}
+          className={`size-4 ${current === 0 ? "bg-primary" : "bg-dark/20 dark:bg-slate-500"}`}
         ></button>
         <button
           onClick={handleSecondSlide}
-          className={`size-4 ${current === 1 ? "bg-primary" : "bg-dark/20"}`}
+          className={`size-4 ${current === 1 ? "bg-primary" : "bg-dark/20 dark:bg-gray-500"}`}
         ></button>
         <button
           onClick={handleThirdSlide}
-          className={`size-4 md:hidden ${current === 2 ? "bg-primary" : "bg-dark/20"}`}
+          className={`size-4 md:hidden ${current === 2 ? "bg-primary" : "bg-dark/20 dark:bg-gray-500"}`}
         ></button>
         <button
           onClick={handleFourthSlide}
-          className={`size-4 sm:hidden ${current === 3 ? "bg-primary" : "bg-dark/20"}`}
+          className={`size-4 sm:hidden ${current === 3 ? "bg-primary" : "bg-dark/20 dark:bg-gray-500"}`}
         ></button>
         <button
           onClick={handleFirfthSlide}
-          className={`size-4 sm:hidden ${current === 4 ? "bg-primary" : "bg-dark/20"}`}
+          className={`size-4 sm:hidden ${current === 4 ? "bg-primary" : "bg-dark/20 dark:bg-gray-500"}`}
         ></button>
         <button
           onClick={handleSixthSlide}
-          className={`size-4 sm:hidden ${current === 5 ? "bg-primary" : "bg-dark/20"}`}
+          className={`size-4 sm:hidden ${current === 5 ? "bg-primary" : "bg-dark/20 dark:bg-gray-500"}`}
         ></button>
       </div>
     </section>
