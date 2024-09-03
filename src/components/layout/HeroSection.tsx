@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 const HeroSection = () => {
   return (
     <section
-      className={`bg-dark text-light flex h-screen items-center justify-around bg-cover bg-no-repeat p-5 max-md:flex-col max-md:justify-center`}
+      className={`bg-dark text-light flex h-screen items-center justify-around bg-cover bg-no-repeat p-5 max-md:flex-col max-md:justify-center bg-opacity-15`}
       style={{ backgroundImage: `url(${Hero})` }}
     >
       <div className="max-md:mt-20 max-md:text-center">
