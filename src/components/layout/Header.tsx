@@ -8,7 +8,7 @@ import ThemeToggler from "../ui/ThemeToggler";
 const Header = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);
   return (
-    <header className="absolute top-0 flex w-full items-center justify-between bg-dark bg-opacity-20 px-4 py-2 text-light max-sm:px-2 dark:bg-opacity-90">
+    <header className="absolute top-0 flex w-full items-center justify-between bg-opacity-20 px-4 py-2 text-light transition max-sm:px-2 bg-dark dark:bg-opacity-80">
       <div className="flex items-center gap-x-1 text-primary">
         <img src="/public/car.svg" alt="Car" />
         <span className="text-xl font-bold italic max-sm:text-base">
