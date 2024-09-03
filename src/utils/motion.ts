@@ -8,15 +8,13 @@ export const slideInLeft = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { delay: 0.5, type: "spring", stiffness: 50 },
   },
 };
 export const slideInRight = {
-  hidden: { x: "100vw", opacity: 0 },
+  hidden: { x: 100, opacity: 0 },
   visible: {
     x: 0,
     opacity: 1,
-    transition: { delay: 0.5, type: "spring", stiffness: 50 },
   },
 };
 
@@ -27,3 +25,4 @@ export const scaleUp = {
     transition: { delay: 0.5, type: "spring", stiffness: 50 },
   },
 };
+

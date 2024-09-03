@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+// Variants
+import { slideInRight } from "../../utils/motion";
 // Components
 import SectionTitle from "../ui/SectionTitle";
 import ReadMoreBtn from "../ui/ReadMoreBtn";
@@ -6,7 +9,7 @@ import AboutImage from "../../assets/about.avif";
 
 const About = () => {
   return (
-    <section className="p-5 mt-5 max-sm:px-2">
+    <section className="mt-5 p-5 max-sm:px-2">
       <SectionTitle text="About Us" />
       <div className="mt-5 grid grid-cols-2 gap-5 max-md:grid-cols-1">
         <img
@@ -14,7 +17,17 @@ const About = () => {
           alt="About Us Page Image"
           className="md:clip-inset h-full object-cover"
         />
-        <div className="max-md:text-center">
+        <motion.div
+          variants={slideInRight}
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.5 },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="max-md:text-center"
+        >
           <h3 className="text-3xl font-bold">
             Driven by Excellence: Your Trusted Automotive Experts
           </h3>
@@ -31,7 +44,7 @@ const About = () => {
             with AutoCare.
           </p>
           <ReadMoreBtn styles="mt-4 max-md:mx-auto" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

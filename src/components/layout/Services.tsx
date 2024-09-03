@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 // Components
 import ServicesSlider from "../ui/ServicesSlider";
 import SectionTitle from "../ui/SectionTitle";
@@ -13,8 +14,19 @@ const Services = () => {
       <SectionTitle text="Our Services" />
       <ServicesSlider />
       <div className="mt-5 grid grid-cols-2 gap-5 max-md:grid-cols-1">
-        <img src={Service} alt="Servicing" className="h-full object-cover" />
-        <div className="max-md:text-center">
+        <motion.div
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1, transition: { duration: 0.5 } }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <img src={Service} alt="Servicing" className="object-cover" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+          viewport={{ once: true, amount: 0.5 }}
+          className="max-md:text-center"
+        >
           <h3 className="text-3xl font-bold">
             10 Years Of Experience In Auto Servicing
           </h3>
@@ -43,7 +55,7 @@ const Services = () => {
             </span>
           </div>
           <ReadMoreBtn styles="mt-4" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

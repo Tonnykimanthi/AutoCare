@@ -18,6 +18,7 @@ const HeroSection = () => {
           variants={slideInLeft}
           initial="hidden"
           animate="visible"
+          transition={{ type: "spring", stiffness: 50 }}
           className="max-md:mt-20 max-md:text-center"
         >
           <h1 className="text-5xl font-bold max-md:text-3xl">
