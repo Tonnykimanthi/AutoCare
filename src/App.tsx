@@ -1,5 +1,6 @@
 import About from "./components/layout/About";
 import Booking from "./components/layout/Booking";
+import Footer from "./components/layout/Footer";
 import Header from "./components/layout/Header";
 import HeroSection from "./components/layout/HeroSection";
 import Services from "./components/layout/Services";
@@ -18,11 +19,11 @@ function App() {
       <Technicians />
       <Testimonials />
       <Booking />
+      <Footer />
     </>
   );
 }
 // TODO
-// BOOK FOR A SERVICE
 // FOOTER
 
 export default App;
