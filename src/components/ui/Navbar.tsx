@@ -24,7 +24,7 @@ const Navbar = ({ navIsOpen, setNavIsOpen }: NavbarProps) => {
         {navbarList.map((item, index) => (
           <li
             key={index}
-            className="relative w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full max-md:text-sm"
+            className={`relative ${index === 0 ? "after:w-full" : ""} w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full max-md:text-sm`}
           >
             {item}
           </li>
