@@ -1,4 +1,7 @@
 import React from "react";
+import { motion } from "framer-motion";
+// Variants
+import { fadeIn } from "../../utils/motion";
 // Constants
 import navbarList from "../../constants/navbarList";
 // Icons
@@ -22,12 +25,16 @@ const Navbar = ({ navIsOpen, setNavIsOpen }: NavbarProps) => {
       </button>
       <ul className="flex gap-x-5 gap-y-10 font-medium max-sm:flex-col">
         {navbarList.map((item, index) => (
-          <li
+          <motion.li
+            variants={fadeIn}
+            initial="hidden"
+            animate="visible"
+            transition={{ delay: 0.5 }}
             key={index}
             className={`relative ${index === 0 ? "after:w-full" : ""} w-fit cursor-pointer after:absolute after:-bottom-2 after:left-1/2 after:h-1 after:w-0 after:-translate-x-1/2 after:bg-primary after:transition-all hover:after:w-full max-md:text-sm`}
           >
             {item}
-          </li>
+          </motion.li>
         ))}
       </ul>
     </nav>
