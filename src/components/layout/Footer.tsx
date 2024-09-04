@@ -24,7 +24,7 @@ const Footer = () => {
         <motion.div
           initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <FooterTitle text="Company" />
           <ul className="mt-5 space-y-1 text-light/90">
@@ -49,7 +49,7 @@ const Footer = () => {
             opacity: 1,
             transition: { duration: 0.5, delay: 0.3 },
           }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <FooterTitle text="Services" />
           <ul className="mt-5 space-y-1 text-light/90">
@@ -74,7 +74,7 @@ const Footer = () => {
             opacity: 1,
             transition: { duration: 0.5, delay: 0.6 },
           }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <FooterTitle text="Address" />
           <ul className="mt-5 space-y-2 text-light/90">
@@ -99,7 +99,7 @@ const Footer = () => {
             opacity: 1,
             transition: { duration: 0.5, delay: 0.9 },
           }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <FooterTitle text="Follow Us" />
           <div className="mt-5 space-x-2">

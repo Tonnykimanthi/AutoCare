@@ -17,14 +17,14 @@ const Services = () => {
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1, transition: { duration: 0.5 } }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <img src={Service} alt="Servicing" className="object-cover" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="max-md:text-center"
         >
           <h3 className="text-3xl font-bold">

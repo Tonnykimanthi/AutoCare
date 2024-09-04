@@ -25,7 +25,7 @@ const About = () => {
             opacity: 1,
             transition: { duration: 0.5 },
           }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="max-md:text-center"
         >
           <h3 className="text-3xl font-bold">
