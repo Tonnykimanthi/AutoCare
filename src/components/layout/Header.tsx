@@ -1,9 +1,10 @@
 import { useState } from "react";
+// Components
 import Button from "../ui/Button";
 import Navbar from "../ui/Navbar";
+import ThemeToggler from "../ui/ThemeToggler";
 // Icons
 import { RiMenu3Fill } from "react-icons/ri";
-import ThemeToggler from "../ui/ThemeToggler";
 
 const Header = () => {
   const [navIsOpen, setNavIsOpen] = useState(false);

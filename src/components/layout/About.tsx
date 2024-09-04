@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-// Variants
-import { slideInRight } from "../../utils/motion";
 // Components
 import SectionTitle from "../ui/SectionTitle";
 import ReadMoreBtn from "../ui/ReadMoreBtn";
@@ -18,7 +16,6 @@ const About = () => {
           className="md:clip-inset h-full object-cover"
         />
         <motion.div
-          variants={slideInRight}
           initial={{ x: 100, opacity: 0 }}
           whileInView={{
             x: 0,
