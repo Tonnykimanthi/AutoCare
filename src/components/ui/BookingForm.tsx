@@ -8,6 +8,7 @@ const BookingForm = () => {
       }}
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.3 } }}
+      viewport={{ once: true, amount: 0.3 }}
       className="w-full max-w-xl rounded-lg border-2 border-secondary/30 bg-dark bg-opacity-50 p-5 backdrop-blur-lg"
     >
       <h4 className="text-center text-2xl font-bold uppercase">
