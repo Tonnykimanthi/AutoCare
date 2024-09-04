@@ -5,9 +5,27 @@ import SectionTitle from "../ui/SectionTitle";
 import Testimonial from "../ui/Testimonial";
 // Constants
 import testimonialsList from "../../constants/testimonials";
+// Icons
+import { MdNavigateNext } from "react-icons/md";
+import { MdNavigateBefore } from "react-icons/md";
 
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => {
+    if (current === testimonialsList.length - 1) {
+      setCurrent(0);
+      return;
+    }
+    setCurrent(current + 1);
+  };
+  const prevSlide = () => {
+    if (current === 0) {
+      setCurrent(testimonialsList.length - 1);
+      return;
+    }
+    setCurrent(current - 1);
+  };
 
   const handleFirstSlide = () => {
     setCurrent(0);
@@ -35,7 +53,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="mt-5 p-5 max-sm:px-2">
+    <section className="relative mt-5 p-5 max-sm:px-2">
       <SectionTitle text="Testimonials" />
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -54,6 +72,7 @@ const Testimonials = () => {
           ))}
         </div>
       </motion.div>
+      {/* Square buttons */}
       <div className="mt-2 flex items-center justify-center gap-x-5">
         <button
           onClick={handleFirstSlide}
@@ -80,6 +99,19 @@ const Testimonials = () => {
           className={`size-4 sm:hidden ${current === 5 ? "bg-primary" : "bg-dark/20 dark:bg-gray-500"}`}
         ></button>
       </div>
+      {/* Prev & Next button for mobile */}
+      <button
+        onClick={prevSlide}
+        className="absolute left-5 top-1/2 -translate-y-1/2 rounded-full border border-light p-1 transition duration-300 hover:bg-light hover:text-dark"
+      >
+        <MdNavigateBefore className="size-7" />
+      </button>
+      <button
+        onClick={nextSlide}
+        className="absolute right-5 top-1/2 -translate-y-1/2 rounded-full border border-light p-1 transition duration-300 hover:bg-light hover:text-dark"
+      >
+        <MdNavigateNext className="size-7" />
+      </button>
     </section>
   );
 };
