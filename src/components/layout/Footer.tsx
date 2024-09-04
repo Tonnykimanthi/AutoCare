@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 // Components
 import FooterTitle from "../ui/FooterTitle";
 // Images
@@ -20,7 +21,11 @@ const Footer = () => {
       }}
     >
       <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:mx-auto max-sm:w-fit max-sm:grid-cols-1">
-        <div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1, transition: { duration: 0.5 } }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <FooterTitle text="Company" />
           <ul className="mt-5 space-y-1 text-light/90">
             <li className="cursor-pointer transition-all hover:tracking-wide hover:text-light">
@@ -36,8 +41,16 @@ const Footer = () => {
               Affliate Program
             </li>
           </ul>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.5, delay: 0.3 },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <FooterTitle text="Services" />
           <ul className="mt-5 space-y-1 text-light/90">
             <li className="cursor-pointer transition-all hover:tracking-wide hover:text-light">
@@ -53,8 +66,16 @@ const Footer = () => {
               Suspension & Steering Repair
             </li>
           </ul>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.5, delay: 0.6 },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <FooterTitle text="Address" />
           <ul className="mt-5 space-y-2 text-light/90">
             <li className="flex items-center gap-x-2">
@@ -70,8 +91,16 @@ const Footer = () => {
               autocare@email.com
             </li>
           </ul>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            transition: { duration: 0.5, delay: 0.9 },
+          }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
           <FooterTitle text="Follow Us" />
           <div className="mt-5 space-x-2">
             <button className="rounded-full border border-light bg-dark p-2 text-light transition duration-300 hover:bg-white hover:text-dark">
@@ -87,7 +116,7 @@ const Footer = () => {
               <FaLinkedinIn className="size-5" />
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </footer>
   );
