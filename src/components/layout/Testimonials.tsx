@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 // Components
 import SectionTitle from "../ui/SectionTitle";
 import Testimonial from "../ui/Testimonial";
@@ -36,7 +37,12 @@ const Testimonials = () => {
   return (
     <section className="mt-5 p-5 max-sm:px-2">
       <SectionTitle text="Testimonials" />
-      <div className="mx-auto mt-5 overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="mx-auto mt-5 overflow-hidden"
+      >
         <div
           className="flex transition duration-500"
           style={{
@@ -47,7 +53,7 @@ const Testimonials = () => {
             <Testimonial testimonial={testimonial} key={index} />
           ))}
         </div>
-      </div>
+      </motion.div>
       <div className="mt-2 flex items-center justify-center gap-x-5">
         <button
           onClick={handleFirstSlide}
