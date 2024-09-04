@@ -23,6 +23,7 @@ const Technician = ({ technician, index }: TechnicianProps) => {
         y: 0,
         transition: { duration: 0.5, delay: 0.3 * index },
       }}
+      viewport={{ once: true, amount: 0.5 }}
       className="group grid w-full max-w-md place-items-center overflow-hidden rounded bg-gray-200 pb-3 dark:bg-gray-700 dark:text-light"
     >
       <div className="relative h-64 w-full overflow-hidden">
