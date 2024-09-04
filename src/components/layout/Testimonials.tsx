@@ -102,13 +102,13 @@ const Testimonials = () => {
       {/* Prev & Next button for mobile */}
       <button
         onClick={prevSlide}
-        className="absolute left-5 top-1/2 -translate-y-1/2 rounded-full border border-light p-1 transition duration-300 active:bg-light active:text-dark sm:hidden"
+        className="absolute left-5 top-1/2 -translate-y-1/2 rounded-full border border-light bg-dark p-1 text-light transition duration-300 active:scale-110 sm:hidden"
       >
         <MdNavigateBefore className="size-7" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-5 top-1/2 -translate-y-1/2 rounded-full border border-light p-1 transition duration-300 active:bg-light active:text-dark sm:hidden"
+        className="absolute right-5 top-1/2 -translate-y-1/2 rounded-full border border-light bg-dark p-1 text-light transition duration-300 active:scale-110 sm:hidden"
       >
         <MdNavigateNext className="size-7" />
       </button>
