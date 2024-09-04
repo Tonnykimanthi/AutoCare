@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 // Images
 import BgImage from "../../assets/figures.avif";
 // Icons
@@ -9,15 +7,6 @@ import { FaCarRear } from "react-icons/fa6";
 import AnimatedCounter from "./AnimatedCounter";
 
 const FiguresInfo = () => {
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, (latest) => Math.round(latest));
-
-  useEffect(() => {
-    const controls = animate(count, 100, { duration: 2 });
-
-    return () => controls.stop();
-  }, []);
-
   return (
     <section
       className="mt-5 bg-cover bg-no-repeat text-light"
