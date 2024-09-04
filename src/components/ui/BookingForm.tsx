@@ -1,9 +1,13 @@
+import { motion } from "framer-motion";
+
 const BookingForm = () => {
   return (
-    <form
+    <motion.form
       onSubmit={(e) => {
         e.preventDefault();
       }}
+      initial={{ scale: 0, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1, transition: { duration: 0.5 } }}
       className="w-full max-w-xl rounded-lg border-2 border-secondary/30 bg-dark bg-opacity-50 p-5 backdrop-blur-lg"
     >
       <h4 className="text-center text-2xl font-bold uppercase">
@@ -36,7 +40,7 @@ const BookingForm = () => {
       <button className="mx-auto mt-2 block w-1/2 rounded bg-secondary py-3 transition hover:bg-secondary/80 hover:shadow-lg active:scale-95">
         SUBMIT
       </button>
-    </form>
+    </motion.form>
   );
 };
 
