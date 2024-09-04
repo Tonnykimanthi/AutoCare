@@ -23,7 +23,5 @@ function App() {
     </>
   );
 }
-// TODO
-// FOOTER
 
 export default App;
