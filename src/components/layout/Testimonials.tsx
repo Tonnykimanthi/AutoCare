@@ -47,7 +47,7 @@ const Testimonials = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    window.addEventListener("resize", () => {
       setCurrent(0);
     });
   }, []);
