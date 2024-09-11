@@ -8,6 +8,7 @@ A modern, responsive, and professional car service and repair website. This plat
 
 - Responsive Design
 - Modern UI
+- Cool Animations
 
 ## Technologies Used
 
