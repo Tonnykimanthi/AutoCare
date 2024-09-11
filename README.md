@@ -13,6 +13,7 @@ A modern, responsive, and professional car service and repair website. This plat
 
 - React JS
 - Tailwind CSS
+- Framer Motion
 
 ## Installation
 
