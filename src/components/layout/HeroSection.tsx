@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 // Variants
-import { slideInLeft, scaleUp } from "../../utils/motion";
+import { slideInBottom, scaleUp } from "../../utils/motion";
 // Components
 import Button from "../ui/Button";
 // Images
@@ -15,10 +15,10 @@ const HeroSection = () => {
     >
       <div className="flex h-screen items-center justify-around p-5 transition max-md:flex-col max-md:justify-center dark:bg-dark dark:bg-opacity-50">
         <motion.div
-          variants={slideInLeft}
+          variants={slideInBottom}
           initial="hidden"
           animate="visible"
-          transition={{ type: "spring", stiffness: 50 }}
+          transition={{ delay: 1, duration: 0.5 }}
           className="max-md:mt-20 max-md:text-center"
         >
           <h1 className="text-5xl font-bold max-md:text-3xl">

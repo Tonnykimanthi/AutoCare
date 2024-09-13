@@ -10,7 +10,13 @@ export const slideInLeft = {
     opacity: 1,
   },
 };
-
+export const slideInBottom = {
+  hidden: { y: 100, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+  },
+};
 export const scaleUp = {
   hidden: { scale: 0 },
   visible: {
