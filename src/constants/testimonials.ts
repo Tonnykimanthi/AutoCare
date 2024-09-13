@@ -4,7 +4,6 @@ import testimonial3 from "../assets/testimonials/testimonial3.avif";
 import testimonial4 from "../assets/testimonials/testimonial4.avif";
 import testimonial5 from "../assets/testimonials/testimonial5.webp";
 import testimonial6 from "../assets/testimonials/testimonial6.webp";
-import testimonial7 from "../assets/testimonials/testimonial7.avif";
 
 const testimonialsList = [
   {
