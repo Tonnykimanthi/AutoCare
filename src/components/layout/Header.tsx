@@ -3,6 +3,8 @@ import { useState } from "react";
 import Button from "../ui/Button";
 import Navbar from "../ui/Navbar";
 import ThemeToggler from "../ui/ThemeToggler";
+// Images
+import CarSvg from "../../../public/car.svg"
 // Icons
 import { RiMenu3Fill } from "react-icons/ri";
 
@@ -11,7 +13,7 @@ const Header = () => {
   return (
     <header className="absolute top-0 flex w-full items-center justify-between bg-dark bg-opacity-20 px-4 py-2 text-light transition max-md:px-2 dark:bg-opacity-80">
       <div className="flex items-center gap-x-1 text-primary">
-        <img src="/public/car.svg" alt="Car" />
+        <img src={CarSvg} />
         <span className="text-xl font-bold italic max-sm:text-base">
           AUTOCARE
         </span>
